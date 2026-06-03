@@ -488,6 +488,15 @@
         syncInputs('years-simple', 'years-compound');
     </script>
 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".current-year").forEach(function(el) {
+            el.textContent = new Date().getFullYear();
+        });
+    });
+</script>
+
 </body>
 
 <footer>
